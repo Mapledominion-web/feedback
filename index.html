@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.2.3.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Trial Ended · Choose Your Broker | Maple Dominion&lt;/title&gt;
+
+    &lt;!-- Google Fonts --&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;family=Mulish:wght@300;400;500;600;700&amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css&quot; /&gt;
+
+    &lt;style&gt;
+        /* ===== Reset &amp; Variables ===== */
+        :root {
+            --theme-color: #fe5924;
+            --theme-color-two: #26ba5e;
+            --theme-color-three: #ce183d;
+            --secondary-color: #1b1e31;
+            --text-color: #6e6e6e;
+            --title-color: #1b1e31;
+            --text-font: 'Mulish', sans-serif;
+            --title-font: 'Syne', sans-serif;
+            --bg-light: #f8f9fc;
+            --border-radius: 12px;
+            --box-shadow: 0 20px 50px rgba(27, 30, 49, 0.08);
+            --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--text-font);
+            font-size: 17px;
+            line-height: 28px;
+            color: var(--text-color);
+            background: #ffffff;
+            -webkit-font-smoothing: antialiased;
+            padding: 40px 0 80px;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--title-font);
+            color: var(--title-color);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        a { font-family: var(--title-font); text-decoration: none; transition: var(--transition); }
+
+        /* ===== Brand ===== */
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .brand-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--theme-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 800;
+            font-family: var(--title-font);
+        }
+        .brand-name {
+            font-family: var(--title-font);
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--secondary-color);
+            letter-spacing: -0.5px;
+        }
+        .brand-name span { color: var(--theme-color); }
+
+        /* ===== Cards ===== */
+        .card {
+            background: #ffffff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 40px 45px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(27, 30, 49, 0.04);
+            transition: var(--transition);
+        }
+        .card:hover { box-shadow: 0 30px 60px rgba(27, 30, 49, 0.10); }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .card-header .icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: rgba(254, 89, 36, 0.10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--theme-color);
+            flex-shrink: 0;
+        }
+        .card-header h2 { font-size: 26px; margin: 0; }
+        .card-header .badge {
+            background: var(--theme-color-two);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 16px;
+            border-radius: 50px;
+            margin-left: auto;
+            font-family: var(--title-font);
+        }
+
+        .card-sub {
+            font-size: 15px;
+            color: var(--text-color);
+            margin-top: -6px;
+            margin-bottom: 18px;
+            opacity: 0.8;
+        }
+
+        /* ===== Buttons ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--title-font);
+            font-weight: 600;
+            font-size: 16px;
+            padding: 14px 36px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            background: var(--secondary-color);
+            color: #fff;
+            letter-spacing: 0.3px;
+        }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(27, 30, 49, 0.20); color: #fff; }
+        .btn-primary { background: var(--theme-color); color: #fff; }
+        .btn-primary:hover { background: #e84a1a; box-shadow: 0 12px 28px rgba(254, 89, 36, 0.35); color: #fff; }
+        .btn-outline { background: transparent; color: var(--secondary-color); border: 2px solid var(--secondary-color); }
+        .btn-outline:hover { background: var(--secondary-color); color: #fff; }
+        .btn-success { background: var(--theme-color-two); color: #fff; }
+        .btn-success:hover { background: #1fa34d; box-shadow: 0 12px 28px rgba(38, 186, 94, 0.35); color: #fff; }
+        .btn-sm { padding: 10px 24px; font-size: 14px; }
+
+        /* ===== Broker Grid ===== */
+        .broker-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+            margin-top: 10px;
+        }
+
+        .broker-item {
+            background: #ffffff;
+            border-radius: var(--border-radius);
+            padding: 28px 24px 30px;
+            border: 1px solid rgba(27, 30, 49, 0.06);
+            transition: var(--transition);
+            position: relative;
+        }
+        .broker-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(27, 30, 49, 0.08);
+            border-color: rgba(254, 89, 36, 0.15);
+        }
+        .broker-item .broker-name {
+            font-family: var(--title-font);
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .broker-item .broker-name .score {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--theme-color);
+            background: rgba(254, 89, 36, 0.08);
+            padding: 2px 14px;
+            border-radius: 50px;
+            font-family: var(--text-font);
+        }
+        .broker-item .broker-desc {
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 10px 0 14px;
+            min-height: 70px;
+        }
+        .broker-item .broker-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 20px;
+            font-size: 14px;
+            color: var(--secondary-color);
+            border-top: 1px solid rgba(27, 30, 49, 0.05);
+            padding-top: 16px;
+            margin-top: 4px;
+        }
+        .broker-item .broker-meta span { display: flex; align-items: center; gap: 6px; }
+        .broker-item .broker-meta i { color: var(--theme-color); width: 18px; font-size: 14px; }
+        .broker-item .recommended-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: var(--theme-color-two);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 18px;
+            border-radius: 50px;
+            letter-spacing: 0.5px;
+            font-family: var(--title-font);
+            text-transform: uppercase;
+        }
+        .broker-item.best-match {
+            border: 2px solid var(--theme-color-two);
+            background: #fafff8;
+        }
+        .broker-item.best-match .broker-name { color: var(--theme-color-two); }
+
+        /* ===== Performance highlight ===== */
+        .performance {
+            background: rgba(254, 89, 36, 0.06);
+            border-radius: 8px;
+            padding: 6px 12px;
+            font-weight: 700;
+            color: var(--theme-color);
+            font-size: 15px;
+            display: inline-block;
+            margin-top: 4px;
+        }
+
+        /* ===== Forms ===== */
+        .form-group { margin-bottom: 24px; }
+        .form-group label {
+            font-family: var(--title-font);
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--secondary-color);
+            display: block;
+            margin-bottom: 6px;
+        }
+        .form-group label .required { color: var(--theme-color-three); margin-left: 2px; }
+        .form-control {
+            width: 100%;
+            padding: 14px 20px;
+            border: 1px solid rgba(27, 30, 49, 0.10);
+            border-radius: 10px;
+            font-family: var(--text-font);
+            font-size: 16px;
+            color: var(--secondary-color);
+            background: #fff;
+            transition: var(--transition);
+        }
+        .form-control:focus {
+            border-color: var(--theme-color);
+            box-shadow: 0 0 0 4px rgba(254, 89, 36, 0.08);
+            outline: none;
+        }
+        textarea.form-control { resize: vertical; min-height: 100px; }
+        select.form-control {
+            appearance: none;
+            background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236e6e6e' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E&quot;);
+            background-repeat: no-repeat;
+            background-position: right 18px center;
+            padding-right: 44px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* ===== Notice Banner ===== */
+        .notice-banner {
+            background: var(--secondary-color);
+            border-radius: var(--border-radius);
+            padding: 28px 38px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px 30px;
+            margin-bottom: 40px;
+        }
+        .notice-banner .notice-icon {
+            font-size: 32px;
+            color: var(--theme-color);
+            background: rgba(255, 255, 255, 0.08);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .notice-banner .notice-text { flex: 1; min-width: 200px; }
+        .notice-banner .notice-text h3 { color: #fff; font-size: 22px; margin-bottom: 4px; }
+        .notice-banner .notice-text p { color: rgba(255, 255, 255, 0.75); font-size: 15px; margin: 0; }
+        .notice-banner .notice-action { display: flex; gap: 12px; flex-wrap: wrap; }
+
+        /* ===== Step Indicator ===== */
+        .steps {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+        .steps .step {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--title-font);
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        .steps .step .num {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: rgba(27, 30, 49, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+        .steps .step.active .num { background: var(--theme-color); color: #fff; }
+        .steps .step.active { color: var(--secondary-color); }
+        .steps .step.completed .num { background: var(--theme-color-two); color: #fff; }
+        .steps .step-line { width: 30px; height: 2px; background: rgba(27, 30, 49, 0.10); }
+
+        /* ===== Confirmation Page ===== */
+        #confirmation {
+            display: none;
+            text-align: center;
+            padding: 50px 30px;
+        }
+        #confirmation .big-icon {
+            font-size: 64px;
+            color: var(--theme-color-two);
+            margin-bottom: 20px;
+        }
+        #confirmation h2 { font-size: 32px; margin-bottom: 12px; }
+        #confirmation p { font-size: 18px; color: var(--text-color); max-width: 600px; margin: 0 auto 20px; }
+        #confirmation .btn { margin-top: 20px; }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            body { padding: 20px 0 50px; }
+            .card { padding: 28px 20px; }
+            .form-row { grid-template-columns: 1fr; }
+            .notice-banner { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
+            .broker-grid { grid-template-columns: 1fr; }
+            .brand-name { font-size: 22px; }
+            .card-header h2 { font-size: 22px; }
+            .steps { gap: 4px; }
+            .steps .step { font-size: 12px; }
+            .steps .step-line { width: 16px; }
+        }
+
+        @media (max-width: 480px) {
+            .card-header { flex-wrap: wrap; }
+            .card-header .badge { margin-left: 0; }
+            .btn { width: 100%; justify-content: center; }
+            .notice-banner .notice-action { width: 100%; }
+            .notice-banner .notice-action .btn { width: 100%; }
+        }
+
+        .mt-10 { margin-top: 10px; }
+        .mt-20 { margin-top: 20px; }
+        .mt-30 { margin-top: 30px; }
+        .mb-10 { margin-bottom: 10px; }
+        .text-center { text-align: center; }
+        .flex-center { display: flex; align-items: center; justify-content: center; }
+        .gap-12 { gap: 12px; }
+        .gap-20 { gap: 20px; }
+        .flex-wrap { flex-wrap: wrap; }
+        .w-100 { width: 100%; }
+        .op-6 { opacity: 0.6; }
+        .fw-600 { font-weight: 600; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;div class=&quot;container&quot;&gt;
+
+        &lt;!-- ===== Brand ===== --&gt;
+        &lt;div class=&quot;brand&quot;&gt;
+            &lt;div class=&quot;brand-icon&quot;&gt;M&lt;/div&gt;
+            &lt;div class=&quot;brand-name&quot;&gt;Maple &lt;span&gt;Dominion&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- ===== Steps Indicator ===== --&gt;
+        &lt;div class=&quot;steps&quot; id=&quot;stepIndicator&quot;&gt;
+            &lt;div class=&quot;step active&quot; data-step=&quot;1&quot;&gt;
+                &lt;span class=&quot;num&quot;&gt;1&lt;/span&gt; Feedback
+            &lt;/div&gt;
+            &lt;span class=&quot;step-line&quot;&gt;&lt;/span&gt;
+            &lt;div class=&quot;step&quot; data-step=&quot;2&quot;&gt;
+                &lt;span class=&quot;num&quot;&gt;2&lt;/span&gt; Choose Broker
+            &lt;/div&gt;
+            &lt;span class=&quot;step-line&quot;&gt;&lt;/span&gt;
+            &lt;div class=&quot;step&quot; data-step=&quot;3&quot;&gt;
+                &lt;span class=&quot;num&quot;&gt;3&lt;/span&gt; Confirmation
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- ===== Notice Banner ===== --&gt;
+        &lt;div class=&quot;notice-banner&quot;&gt;
+            &lt;div class=&quot;notice-icon&quot;&gt;&lt;i class=&quot;fas fa-clock&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+            &lt;div class=&quot;notice-text&quot;&gt;
+                &lt;h3&gt;Trial Period Ended&lt;/h3&gt;
+                &lt;p&gt;You have completed the 1-week trial and 3 dedicated sessions. Please take 2 minutes to share your experience and choose the best broker.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;notice-action&quot;&gt;
+                &lt;a href=&quot;#feedback&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;&lt;i class=&quot;fas fa-pen-fancy&quot;&gt;&lt;/i&gt; Give Feedback&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- ============================================================ --&gt;
+        &lt;!-- STEP 1: Feedback + Questionnaire --&gt;
+        &lt;!-- ============================================================ --&gt;
+        &lt;div class=&quot;card&quot; id=&quot;feedback&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-comment-dots&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                &lt;h2&gt;Your Feedback&lt;/h2&gt;
+                &lt;span class=&quot;badge&quot;&gt;Required&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;p class=&quot;card-sub&quot;&gt;Your honest feedback helps us match you with the ideal broker.&lt;/p&gt;
+
+            &lt;form id=&quot;feedbackForm&quot; onsubmit=&quot;return false;&quot;&gt;
+                &lt;!-- Full Name --&gt;
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label&gt;Your Full Name &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;fullName&quot; placeholder=&quot;Enter your full name&quot; required /&gt;
+                &lt;/div&gt;
+
+                &lt;!-- Trial Experience Feedback --&gt;
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label&gt;Tell us about your trial experience with the broker &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+                    &lt;textarea class=&quot;form-control&quot; id=&quot;trialExperience&quot; placeholder=&quot;How did the sessions go? What did you like or dislike? Any suggestions?&quot; required&gt;&lt;/textarea&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;form-row&quot;&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label&gt;Overall Satisfaction &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+                        &lt;select class=&quot;form-control&quot; id=&quot;satisfaction&quot; required&gt;
+                            &lt;option value=&quot;&quot;&gt;Select one&lt;/option&gt;
+                            &lt;option value=&quot;5&quot;&gt;Very Satisfied (5/5)&lt;/option&gt;
+                            &lt;option value=&quot;4&quot;&gt;Satisfied (4/5)&lt;/option&gt;
+                            &lt;option value=&quot;3&quot;&gt;Average (3/5)&lt;/option&gt;
+                            &lt;option value=&quot;2&quot;&gt;Dissatisfied (2/5)&lt;/option&gt;
+                            &lt;option value=&quot;1&quot;&gt;Very Dissatisfied (1/5)&lt;/option&gt;
+                        &lt;/select&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label&gt;Willing to continue? &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+                        &lt;select class=&quot;form-control&quot; id=&quot;willingness&quot; required&gt;
+                            &lt;option value=&quot;&quot;&gt;Select one&lt;/option&gt;
+                            &lt;option value=&quot;yes&quot;&gt;Yes, I am interested&lt;/option&gt;
+                            &lt;option value=&quot;no&quot;&gt;Not at this time&lt;/option&gt;
+                            &lt;option value=&quot;maybe&quot;&gt;Still considering&lt;/option&gt;
+                        &lt;/select&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label&gt;What is your primary trading goal? &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+                    &lt;textarea class=&quot;form-control&quot; id=&quot;goal&quot; placeholder=&quot;e.g., I aim for 20% stable returns over 6 months with a low-to-moderate risk approach…&quot; required&gt;&lt;/textarea&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label&gt;Top traits you value most in a broker?&lt;/label&gt;
+                    &lt;div id=&quot;traitsGroup&quot; style=&quot;display:flex;flex-wrap:wrap;gap:12px;margin-top:4px;&quot;&gt;
+                        &lt;label style=&quot;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:400;&quot;&gt;
+                            &lt;input type=&quot;checkbox&quot; value=&quot;low_spreads&quot; /&gt; Low spreads
+                        &lt;/label&gt;
+                        &lt;label style=&quot;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:400;&quot;&gt;
+                            &lt;input type=&quot;checkbox&quot; value=&quot;high_success&quot; /&gt; High success rate
+                        &lt;/label&gt;
+                        &lt;label style=&quot;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:400;&quot;&gt;
+                            &lt;input type=&quot;checkbox&quot; value=&quot;low_entry&quot; /&gt; Low entry barrier
+                        &lt;/label&gt;
+                        &lt;label style=&quot;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:400;&quot;&gt;
+                            &lt;input type=&quot;checkbox&quot; value=&quot;support&quot; /&gt; Customer support
+                        &lt;/label&gt;
+                        &lt;label style=&quot;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:400;&quot;&gt;
+                            &lt;input type=&quot;checkbox&quot; value=&quot;tools&quot; /&gt; Trading tools
+                        &lt;/label&gt;
+                        &lt;label style=&quot;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:400;&quot;&gt;
+                            &lt;input type=&quot;checkbox&quot; value=&quot;reputation&quot; /&gt; Brand reputation
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div style=&quot;display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;&quot;&gt;
+                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; onclick=&quot;storeFeedbackAndShowBrokers()&quot;&gt;
+                        &lt;i class=&quot;fas fa-arrow-right&quot;&gt;&lt;/i&gt; Submit &amp; View Brokers
+                    &lt;/button&gt;
+                    &lt;span style=&quot;font-size:14px;color:var(--text-color);align-self:center;&quot;&gt;
+                        &lt;i class=&quot;fas fa-lock&quot; style=&quot;color:var(--theme-color-two);&quot;&gt;&lt;/i&gt; Data will be sent only after you choose a broker
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+
+        &lt;!-- ============================================================ --&gt;
+        &lt;!-- STEP 2: Broker List --&gt;
+        &lt;!-- ============================================================ --&gt;
+        &lt;div id=&quot;brokerSection&quot; style=&quot;display:none;&quot;&gt;
+
+            &lt;div class=&quot;card&quot; style=&quot;background:var(--bg-light);border-left:4px solid var(--theme-color-two);&quot;&gt;
+                &lt;div style=&quot;display:flex;align-items:center;gap:14px;flex-wrap:wrap;&quot;&gt;
+                    &lt;i class=&quot;fas fa-check-circle&quot; style=&quot;font-size:28px;color:var(--theme-color-two);&quot;&gt;&lt;/i&gt;
+                    &lt;div&gt;
+                        &lt;h3 style=&quot;font-size:20px;margin:0;&quot;&gt;Based on your feedback, we have curated 5 brokers for you&lt;/h3&gt;
+                        &lt;p style=&quot;margin:4px 0 0;font-size:15px;opacity:0.7;&quot;&gt;
+                            &lt;strong&gt;Emily Lewinsky&lt;/strong&gt; stands out as our top recommendation for balanced performance.
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;broker-grid&quot;&gt;
+                &lt;!-- 1. Emily Lewinsky --&gt;
+                &lt;div class=&quot;broker-item best-match&quot;&gt;
+                    &lt;span class=&quot;recommended-badge&quot;&gt;&lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt; Best Match&lt;/span&gt;
+                    &lt;div class=&quot;broker-name&quot;&gt;Emily Lewinsky &lt;span class=&quot;score&quot;&gt;4.7 ★&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&quot;broker-desc&quot;&gt;Balanced strategy expert specializing in medium-to-long-term trend tracking. 94% client retention, known for robust risk management and transparent communication.&lt;/div&gt;
+                    &lt;div class=&quot;performance&quot;&gt;&lt;i class=&quot;fas fa-dollar-sign&quot;&gt;&lt;/i&gt; +$128,500,000 total client returns (2025)&lt;/div&gt;
+                    &lt;div class=&quot;broker-meta&quot;&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-wallet&quot;&gt;&lt;/i&gt; Starting at $3,000&lt;/span&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-chart-line&quot;&gt;&lt;/i&gt; Success rate 78%&lt;/span&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-users&quot;&gt;&lt;/i&gt; Portfolio $4.2M&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- 2. James Carter --&gt;
+                &lt;div class=&quot;broker-item&quot;&gt;
+                    &lt;div class=&quot;broker-name&quot;&gt;James Carter &lt;span class=&quot;score&quot;&gt;4.5 ★&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&quot;broker-desc&quot;&gt;Aggressive short-term trader, skilled at capturing excess returns from market volatility. Suitable for higher risk tolerance.&lt;/div&gt;
+                    &lt;div class=&quot;performance&quot;&gt;&lt;i class=&quot;fas fa-dollar-sign&quot;&gt;&lt;/i&gt; +$89,200,000 total client returns (2025)&lt;/div&gt;
+                    &lt;div class=&quot;broker-meta&quot;&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-wallet&quot;&gt;&lt;/i&gt; Starting at $1,000&lt;/span&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-chart-line&quot;&gt;&lt;/i&gt; Success rate 62%&lt;/span&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-users&quot;&gt;&lt;/i&gt; Portfolio $1.8M&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- 3. Sophia Chen --&gt;
+                &lt;div class=&quot;broker-item&quot;&gt;
+                    &lt;div class=&quot;broker-name&quot;&gt;Sophia Chen &lt;span class=&quot;score&quot;&gt;4.3 ★&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&quot;broker-desc&quot;&gt;Fundamental analysis expert with a deep focus on macroeconomic policies. Core strategy is long-term, steady value appreciation.&lt;/div&gt;
+                    &lt;div class=&quot;performance&quot;&gt;&lt;i class=&quot;fas fa-dollar-sign&quot;&gt;&lt;/i&gt; +$76,800,000 total client returns (2025)&lt;/div&gt;
+                    &lt;div class=&quot;broker-meta&quot;&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-wallet&quot;&gt;&lt;/i&gt; Starting at $2,500&lt;/span&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-chart-line&quot;&gt;&lt;/i&gt; Success rate 71%&lt;/span&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-users&quot;&gt;&lt;/i&gt; Portfolio $3.1M&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- 4. Michael Torres --&gt;
+                &lt;div class=&quot;broker-item&quot;&gt;
+                    &lt;div class=&quot;broker-name&quot;&gt;Michael Torres &lt;span class=&quot;score&quot;&gt;4.0 ★&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&quot;broker-desc&quot;&gt;Quantitative trading expert using algorithmic models for high-frequency execution. Ideal for clients who value technical analysis.&lt;/div&gt;
+                    &lt;div class=&quot;performance&quot;&gt;&lt;i class=&quot;fas fa-dollar-sign&quot;&gt;&lt;/i&gt; +$52,100,000 total client returns (2025)&lt;/div&gt;
+                    &lt;div class=&quot;broker-meta&quot;&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-wallet&quot;&gt;&lt;/i&gt; Starting at $500&lt;/span&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-chart-line&quot;&gt;&lt;/i&gt; Success rate 55%&lt;/span&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-users&quot;&gt;&lt;/i&gt; Portfolio $0.9M&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- 5. Amanda Brooks --&gt;
+                &lt;div class=&quot;broker-item&quot;&gt;
+                    &lt;div class=&quot;broker-name&quot;&gt;Amanda Brooks &lt;span class=&quot;score&quot;&gt;4.8 ★&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&quot;broker-desc&quot;&gt;Top-tier institutional strategist with 15 years of Wall Street experience. Multi-asset allocation specialist; higher entry point.&lt;/div&gt;
+                    &lt;div class=&quot;performance&quot;&gt;&lt;i class=&quot;fas fa-dollar-sign&quot;&gt;&lt;/i&gt; +$156,300,000 total client returns (2025)&lt;/div&gt;
+                    &lt;div class=&quot;broker-meta&quot;&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-wallet&quot;&gt;&lt;/i&gt; Starting at $10,000&lt;/span&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-chart-line&quot;&gt;&lt;/i&gt; Success rate 84%&lt;/span&gt;
+                        &lt;span&gt;&lt;i class=&quot;fas fa-users&quot;&gt;&lt;/i&gt; Portfolio $12.7M&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- ===== Choose Next Step ===== --&gt;
+            &lt;div class=&quot;card&quot; style=&quot;margin-top:20px;&quot;&gt;
+                &lt;div class=&quot;card-header&quot;&gt;
+                    &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-route&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                    &lt;h2&gt;Choose Your Next Step&lt;/h2&gt;
+                    &lt;span class=&quot;badge&quot; style=&quot;background:var(--theme-color-three);&quot;&gt;Action&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;p class=&quot;card-sub&quot;&gt;You have reviewed all brokers. Now, make your final decision.&lt;/p&gt;
+
+                &lt;div style=&quot;display:flex;flex-wrap:wrap;gap:16px;margin:10px 0 6px;&quot;&gt;
+                    &lt;button class=&quot;btn btn-success&quot; onclick=&quot;selectBroker('Emily Lewinsky')&quot;&gt;
+                        &lt;i class=&quot;fas fa-handshake&quot;&gt;&lt;/i&gt; Select Emily Lewinsky (Recommended)
+                    &lt;/button&gt;
+                    &lt;button class=&quot;btn btn-primary&quot; onclick=&quot;selectBroker('other broker')&quot;&gt;
+                        &lt;i class=&quot;fas fa-user-plus&quot;&gt;&lt;/i&gt; Contact another broker
+                    &lt;/button&gt;
+                    &lt;button class=&quot;btn btn-outline&quot; onclick=&quot;selectBroker('not now')&quot;&gt;
+                        &lt;i class=&quot;fas fa-pause&quot;&gt;&lt;/i&gt; Not now, I'll think it over
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;&lt;!-- /brokerSection --&gt;
+
+        &lt;!-- ============================================================ --&gt;
+        &lt;!-- STEP 3: Confirmation Page --&gt;
+        &lt;!-- ============================================================ --&gt;
+        &lt;div id=&quot;confirmation&quot; class=&quot;card&quot;&gt;
+            &lt;div class=&quot;big-icon&quot;&gt;&lt;i class=&quot;fas fa-check-circle&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+            &lt;h2 id=&quot;confirmationTitle&quot;&gt;Thank You!&lt;/h2&gt;
+            &lt;p id=&quot;confirmationMessage&quot;&gt;Your feedback and broker selection have been received.&lt;/p&gt;
+            &lt;div style=&quot;margin-top: 20px;&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; onclick=&quot;window.location.reload();&quot;&gt;Start Over&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- ===== Footer ===== --&gt;
+        &lt;div style=&quot;margin-top:50px;padding-top:24px;border-top:1px solid rgba(27,30,49,0.06);font-size:14px;color:var(--text-color);display:flex;flex-wrap:wrap;gap:12px 30px;justify-content:space-between;align-items:center;&quot;&gt;
+            &lt;span&gt;&amp;copy; 2026 Maple Dominion. All rights reserved.&lt;/span&gt;
+            &lt;span&gt;
+                &lt;i class=&quot;fas fa-lock&quot; style=&quot;margin-right:4px;&quot;&gt;&lt;/i&gt; Secure encrypted connection
+                &lt;span style=&quot;margin:0 12px;&quot;&gt;|&lt;/span&gt;
+                &lt;i class=&quot;fas fa-clock&quot;&gt;&lt;/i&gt; Trial ended
+            &lt;/span&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;&lt;!-- /container --&gt;
+
+    &lt;script&gt;
+        // ================================================================
+        // Global: store feedback data until broker choice is made
+        // ================================================================
+        let storedFeedback = {
+            fullName: '',
+            trialExperience: '',
+            satisfaction: '',
+            willingness: '',
+            tradingGoal: '',
+            valuedTraits: []
+        };
+
+        /**
+         * Update the step indicator
+         */
+        function updateSteps(activeStep) {
+            const steps = document.querySelectorAll('#stepIndicator .step');
+            steps.forEach((step, index) =&gt; {
+                const num = index + 1;
+                step.classList.remove('active', 'completed');
+                if (num &lt; activeStep) step.classList.add('completed');
+                else if (num === activeStep) step.classList.add('active');
+            });
+        }
+
+        /**
+         * Store feedback and show broker list (Step 2)
+         */
+        function storeFeedbackAndShowBrokers() {
+            const fullName = document.getElementById('fullName');
+            const trialExp = document.getElementById('trialExperience');
+            const satisfaction = document.getElementById('satisfaction');
+            const willingness = document.getElementById('willingness');
+            const goal = document.getElementById('goal');
+            let valid = true;
+
+            // Validation
+            if (!fullName.value.trim()) { valid = false; fullName.style.borderColor = 'var(--theme-color-three)'; } 
+            else { fullName.style.borderColor = ''; }
+
+            if (!trialExp.value.trim()) { valid = false; trialExp.style.borderColor = 'var(--theme-color-three)'; } 
+            else { trialExp.style.borderColor = ''; }
+
+            if (!satisfaction.value) { valid = false; satisfaction.style.borderColor = 'var(--theme-color-three)'; } 
+            else { satisfaction.style.borderColor = ''; }
+
+            if (!willingness.value) { valid = false; willingness.style.borderColor = 'var(--theme-color-three)'; } 
+            else { willingness.style.borderColor = ''; }
+
+            if (!goal.value.trim()) { valid = false; goal.style.borderColor = 'var(--theme-color-three)'; } 
+            else { goal.style.borderColor = ''; }
+
+            if (!valid) {
+                alert('Please fill in all required fields (marked with *).');
+                return;
+            }
+
+            // Collect traits
+            const selectedTraits = [];
+            document.querySelectorAll('#traitsGroup input[type=&quot;checkbox&quot;]:checked').forEach(cb =&gt; {
+                selectedTraits.push(cb.value);
+            });
+
+            // Store all data
+            storedFeedback.fullName = fullName.value.trim();
+            storedFeedback.trialExperience = trialExp.value.trim();
+            storedFeedback.satisfaction = satisfaction.value;
+            storedFeedback.willingness = willingness.value;
+            storedFeedback.tradingGoal = goal.value.trim();
+            storedFeedback.valuedTraits = selectedTraits;
+
+            // Hide feedback, show brokers
+            document.getElementById('feedback').style.display = 'none';
+            document.getElementById('brokerSection').style.display = 'block';
+            updateSteps(2);
+            document.getElementById('brokerSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        /**
+         * Handle broker choice: send all data to Formspree, then show confirmation (Step 3)
+         */
+        function selectBroker(choice) {
+            // Map choice to label
+            let choiceLabel = choice;
+            if (choice === 'Emily Lewinsky') {
+                choiceLabel = 'Selected Emily Lewinsky (Best Match)';
+            } else if (choice === 'other broker') {
+                choiceLabel = 'Requested to contact another broker';
+            } else if (choice === 'not now') {
+                choiceLabel = 'Not now — thinking it over';
+            } else {
+                choiceLabel = 'Selected: ' + choice;
+            }
+
+            // Prepare full payload
+            const payload = {
+                _subject: '📋 Full Client Feedback &amp; Broker Selection',
+                full_name: storedFeedback.fullName,
+                trial_experience: storedFeedback.trialExperience,
+                satisfaction: storedFeedback.satisfaction,
+                willingness: storedFeedback.willingness,
+                trading_goal: storedFeedback.tradingGoal,
+                valued_traits: storedFeedback.valuedTraits.join(', '),
+                broker_selection: choiceLabel,
+                selection_timestamp: new Date().toISOString()
+            };
+
+            // Disable buttons to prevent double click
+            const btns = document.querySelectorAll('#brokerSection .btn-success, #brokerSection .btn-primary, #brokerSection .btn-outline');
+            btns.forEach(btn =&gt; btn.disabled = true);
+
+            // Send to Formspree
+            const endpoint = 'https://formspree.io/f/mrenbayp';
+            fetch(endpoint, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            })
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error('Server responded with status ' + response.status);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                console.log('All data sent successfully:', data);
+                // Show confirmation
+                showConfirmation(choice);
+            })
+            .catch(error =&gt; {
+                console.error('Error sending data:', error);
+                alert('There was an error sending your data. Please try again later.\n\nError: ' + error.message);
+                // Even if error, we still show confirmation to not block user
+                showConfirmation(choice);
+            })
+            .finally(() =&gt; {
+                btns.forEach(btn =&gt; btn.disabled = false);
+            });
+        }
+
+        /**
+         * Display the confirmation page with a tailored message
+         */
+        function showConfirmation(choice) {
+            // Hide broker section, show confirmation
+            document.getElementById('brokerSection').style.display = 'none';
+            const confirmDiv = document.getElementById('confirmation');
+            confirmDiv.style.display = 'block';
+            updateSteps(3);
+            confirmDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            const title = document.getElementById('confirmationTitle');
+            const msg = document.getElementById('confirmationMessage');
+
+            if (choice === 'Emily Lewinsky') {
+                title.textContent = '🎉 You Selected Emily Lewinsky!';
+                msg.innerHTML = `Thank you, &lt;strong&gt;${storedFeedback.fullName}&lt;/strong&gt;!&lt;br&gt;
+                Emily is our top recommendation, and we're confident she'll help you achieve your goals.&lt;br&gt;
+                Our team will contact you within 24 hours to arrange a dedicated onboarding session.`;
+            } else if (choice === 'other broker') {
+                title.textContent = '📞 We’ll Connect You with Another Broker';
+                msg.innerHTML = `Thank you, &lt;strong&gt;${storedFeedback.fullName}&lt;/strong&gt;!&lt;br&gt;
+                Our advisors will reach out shortly to help you connect with the broker that best fits your needs.&lt;br&gt;
+                You can expect to hear from us within 24 hours.`;
+            } else if (choice === 'not now') {
+                title.textContent = '⏳ Take Your Time';
+                msg.innerHTML = `Thank you, &lt;strong&gt;${storedFeedback.fullName}&lt;/strong&gt;!&lt;br&gt;
+                We respect your decision. You can return to this page anytime to make a final choice.&lt;br&gt;
+                Your client manager is also available to answer any questions.`;
+            } else {
+                title.textContent = 'Thank You!';
+                msg.innerHTML = `Your feedback has been recorded. We'll get back to you shortly.`;
+            }
+        }
+
+        // Smooth scroll for &quot;Give Feedback&quot; button
+        document.querySelector('.notice-banner .btn')?.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('feedback').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+
+        // On load, ensure step 1 is active
+        updateSteps(1);
+    &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
